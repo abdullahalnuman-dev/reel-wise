@@ -1,1 +1,1281 @@
-<h1>Welcome to policy</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Privacy Policy for ReelWise: Reels Counter" />
+<title>Privacy Policy — ReelWise: Reels Counter</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+<script>
+/* ============================================================
+   REELWISE PRIVACY POLICY CONFIGURATION
+   Replace only the clearly marked contact/hosting values
+   before publishing this page.
+   ============================================================ */
+const APP = {
+  name:          "ReelWise",
+  storeName:     "ReelWise: Reels Counter",
+  version:       "1.0.0",
+  effectiveDate: "September 17, 2026",
+
+  // REQUIRED BEFORE PUBLICATION:
+  devName:       "ReelWise Developer",
+  email:         "abdullahalnuman.dev@gmail.com",
+  website:        "https://abdullahalnuman-dev.github.io/reel-wise",
+
+  responseTime:  "30 days",
+  copyright:     "2026"
+};
+/* ============================================================ */
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    /* ReelWise palette — intentionally different from the supplied template */
+    --ink-950:  #071b1a;
+    --ink-900:  #0b2927;
+    --ink-800:  #123b38;
+    --ink-700:  #245b56;
+    --ink-500:  #557774;
+    --ink-300:  #8aa6a3;
+    --ink-100:  #dbe9e7;
+    --ink-50:   #f1f8f7;
+
+    --mint:      #16a394;
+    --mint-lt:   #d9f4ef;
+    --mint-glow: #16a39424;
+
+    --coral:     #ef786b;
+    --coral-lt:  #fde5e1;
+
+    --blue:      #4778d8;
+    --blue-lt:   #e8effd;
+
+    --red:       #c94b4b;
+
+    --serif:    'Playfair Display', Georgia, serif;
+    --sans:     'DM Sans', sans-serif;
+    --mono:     'DM Mono', monospace;
+
+    --radius:   12px;
+    --shadow-sm: 0 2px 8px rgba(7,27,26,.08);
+    --shadow-md: 0 6px 24px rgba(7,27,26,.13);
+    --shadow-lg: 0 16px 48px rgba(7,27,26,.18);
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: var(--sans);
+    background: #e9f1f0;
+    color: var(--ink-800);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .hero {
+    background: var(--ink-950);
+    padding: 64px 48px 52px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 60% 55% at 85% 15%, rgba(22,163,148,.22) 0%, transparent 60%),
+      radial-gradient(ellipse 45% 60% at 10% 90%, rgba(239,120,107,.12) 0%, transparent 58%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--mint);
+    margin-bottom: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 1px;
+    background: var(--mint);
+    opacity: .8;
+  }
+
+  .hero-title {
+    font-family: var(--serif);
+    font-size: clamp(2.2rem, 5vw, 3.4rem);
+    font-weight: 900;
+    color: #fff;
+    line-height: 1.1;
+    letter-spacing: -.02em;
+    margin-bottom: 12px;
+  }
+
+  .hero-app {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,.68);
+    margin-bottom: 24px;
+  }
+
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .badge {
+    font-family: var(--mono);
+    font-size: .72rem;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 500;
+    letter-spacing: .04em;
+  }
+
+  .badge-mint {
+    background: var(--mint-glow);
+    border: 1px solid rgba(22,163,148,.42);
+    color: #42d8c5;
+  }
+
+  .badge-coral {
+    background: rgba(239,120,107,.12);
+    border: 1px solid rgba(239,120,107,.34);
+    color: #ff9c91;
+  }
+
+  .badge-ghost {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.14);
+    color: rgba(255,255,255,.58);
+  }
+
+  .commitment {
+    background: linear-gradient(135deg, #0d403b 0%, #10524b 100%);
+    padding: 20px 48px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    border-left: 4px solid var(--mint);
+  }
+
+  .commitment-icon { font-size: 1.5rem; flex-shrink: 0; padding-top: 2px; }
+  .commitment-text strong {
+    display: block;
+    color: #56e0ce;
+    font-size: .85rem;
+    font-weight: 600;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+
+  .commitment-text p {
+    color: rgba(255,255,255,.77);
+    font-size: .875rem;
+    line-height: 1.65;
+  }
+
+  .toc-strip {
+    background: var(--ink-50);
+    border-bottom: 2px solid var(--ink-100);
+    padding: 14px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    align-items: center;
+  }
+
+  .toc-label {
+    font-family: var(--mono);
+    font-size: .7rem;
+    color: var(--ink-300);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+
+  .toc-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .toc-link {
+    font-size: .72rem;
+    color: var(--ink-500);
+    text-decoration: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: all .15s;
+    font-family: var(--mono);
+    border: 1px solid transparent;
+  }
+
+  .toc-link:hover {
+    background: var(--mint-lt);
+    color: var(--ink-800);
+    border-color: rgba(22,163,148,.28);
+  }
+
+  .body-wrap { padding: 0 48px 64px; }
+
+  .section-heading {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--ink-950);
+    margin: 44px 0 6px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--ink-100);
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 52px;
+    height: 2px;
+    background: var(--mint);
+  }
+
+  .section-num {
+    font-family: var(--mono);
+    font-size: .75rem;
+    color: var(--mint);
+    background: var(--mint-lt);
+    border: 1px solid rgba(22,163,148,.3);
+    padding: 2px 8px;
+    border-radius: 4px;
+    flex-shrink: 0;
+    letter-spacing: .04em;
+  }
+
+  .sub-heading {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--ink-700);
+    margin: 22px 0 6px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .sub-heading::before {
+    content: '';
+    width: 3px;
+    height: 14px;
+    background: var(--coral);
+    border-radius: 2px;
+    display: inline-block;
+  }
+
+  .body-text {
+    font-size: .9rem;
+    color: var(--ink-500);
+    line-height: 1.75;
+    margin: 8px 0;
+  }
+
+  .body-text a {
+    color: var(--mint);
+    font-weight: 600;
+  }
+
+  .check-list, .bullet-list {
+    list-style: none;
+    margin: 8px 0 8px 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .check-list li, .bullet-list li {
+    font-size: .875rem;
+    color: var(--ink-500);
+    line-height: 1.6;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .check-list li::before {
+    content: '✓';
+    color: var(--mint);
+    font-weight: 700;
+    font-size: .85rem;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .bullet-list li::before {
+    content: '•';
+    color: var(--coral);
+    font-weight: 900;
+    font-size: 1rem;
+    flex-shrink: 0;
+    line-height: 1.5;
+  }
+
+  .callout {
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin: 20px 0;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .callout-blue {
+    background: linear-gradient(135deg, #f0f5ff 0%, #e9f0fd 100%);
+    border: 1px solid #cad8f7;
+    border-left: 4px solid var(--blue);
+  }
+
+  .callout-green {
+    background: linear-gradient(135deg, #effbf8 0%, #e3f8f3 100%);
+    border: 1px solid #b9eadf;
+    border-left: 4px solid var(--mint);
+  }
+
+  .callout-coral {
+    background: linear-gradient(135deg, #fff4f1 0%, #fdebe7 100%);
+    border: 1px solid #f6cfc8;
+    border-left: 4px solid var(--coral);
+  }
+
+  .callout-emoji { font-size: 1.4rem; flex-shrink: 0; }
+
+  .callout-content strong {
+    display: block;
+    font-size: .875rem;
+    font-weight: 700;
+    color: var(--ink-800);
+    margin-bottom: 5px;
+  }
+
+  .callout-content p {
+    font-size: .855rem;
+    color: var(--ink-500);
+    line-height: 1.7;
+  }
+
+  .quick-ref {
+    border: 1.5px solid var(--ink-100);
+    border-radius: var(--radius);
+    overflow: hidden;
+    font-size: .83rem;
+  }
+
+  .quick-ref-row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-bottom: 1px solid var(--ink-100);
+    transition: background .15s;
+  }
+
+  .quick-ref-row:last-child { border-bottom: none; }
+  .quick-ref-row:nth-child(even) { background: var(--ink-50); }
+  .quick-ref-row:hover { background: var(--mint-lt); }
+
+  .quick-ref-label {
+    padding: 10px 14px;
+    font-weight: 600;
+    color: var(--ink-800);
+    border-right: 1px solid var(--ink-100);
+    background: inherit;
+  }
+
+  .quick-ref-value {
+    padding: 10px 16px;
+    color: var(--ink-500);
+  }
+
+  .tag-yes, .tag-no, .tag-local {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: .75rem;
+    padding: 1px 8px;
+    border-radius: 4px;
+    border: 1px solid;
+  }
+
+  .tag-yes {
+    background: #fff2ef;
+    color: #b9564b;
+    border-color: rgba(239,120,107,.28);
+  }
+
+  .tag-no {
+    background: #eefbf7;
+    color: var(--mint);
+    border-color: rgba(22,163,148,.2);
+  }
+
+  .tag-local {
+    background: #edf3ff;
+    color: #476fbe;
+    border-color: rgba(71,120,216,.22);
+  }
+
+  .tag-no::before { content: '✓'; }
+  .tag-yes::before { content: '•'; }
+  .tag-local::before { content: '⌂'; }
+
+  .data-table, .perm-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .82rem;
+    border: 1px solid var(--ink-100);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin: 12px 0;
+  }
+
+  .data-table thead tr, .perm-table thead tr {
+    background: var(--ink-900);
+    color: #fff;
+  }
+
+  .data-table th, .perm-table th {
+    padding: 10px 14px;
+    text-align: left;
+    font-weight: 600;
+    font-family: var(--mono);
+    font-size: .72rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .data-table td, .perm-table td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--ink-100);
+    color: var(--ink-500);
+    vertical-align: top;
+  }
+
+  .data-table tbody tr:last-child td,
+  .perm-table tbody tr:last-child td { border-bottom: none; }
+
+  .data-table tbody tr:nth-child(even),
+  .perm-table tbody tr:nth-child(even) { background: var(--ink-50); }
+
+  .data-table tbody tr:hover,
+  .perm-table tbody tr:hover { background: var(--mint-lt); transition: background .15s; }
+
+  .perm-name {
+    font-family: var(--mono);
+    font-size: .78rem;
+    font-weight: 500;
+    color: var(--ink-700);
+  }
+
+  .perm-required {
+    font-weight: 700;
+    color: var(--coral);
+    font-size: .8rem;
+  }
+
+  .contact-box {
+    background: var(--ink-50);
+    border: 1.5px solid var(--ink-100);
+    border-radius: var(--radius);
+    padding: 22px 24px;
+    margin: 14px 0;
+  }
+
+  .contact-box h4 {
+    font-family: var(--serif);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--ink-800);
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--ink-100);
+  }
+
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 0;
+    font-size: .87rem;
+    color: var(--ink-500);
+    border-bottom: 1px dashed var(--ink-100);
+  }
+
+  .contact-row:last-child { border-bottom: none; }
+  .contact-icon { font-size: 1.1rem; width: 26px; text-align: center; flex-shrink: 0; }
+  .contact-label {
+    font-weight: 600;
+    color: var(--ink-700);
+    min-width: 120px;
+    font-size: .8rem;
+    font-family: var(--mono);
+  }
+
+  .contact-val a {
+    color: var(--ink-800);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .contact-val a:hover { color: var(--mint); text-decoration: underline; }
+
+  .footer {
+    background: var(--ink-950);
+    padding: 28px 48px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-copy {
+    font-size: .8rem;
+    color: rgba(255,255,255,.4);
+    font-family: var(--mono);
+  }
+
+  .footer-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .footer-tag {
+    font-size: .7rem;
+    padding: 3px 9px;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,.12);
+    color: rgba(255,255,255,.45);
+    font-family: var(--mono);
+    letter-spacing: .04em;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity .55s ease, transform .55s ease;
+  }
+
+  .fade-in.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  @media (max-width: 680px) {
+    .hero, .commitment, .body-wrap, .footer, .toc-strip {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .hero { padding-top: 40px; padding-bottom: 36px; }
+    .hero-title { font-size: 2rem; }
+    .quick-ref-row { grid-template-columns: 135px 1fr; }
+    .data-table, .perm-table { display: block; overflow-x: auto; }
+    .section-heading { font-size: 1.1rem; }
+    .footer { flex-direction: column; align-items: flex-start; }
+    .contact-row { align-items: flex-start; }
+    .contact-label { min-width: 95px; }
+  }
+</style>
+</head>
+
+<body>
+<div class="page" id="top">
+
+  <header class="hero">
+    <div class="hero-eyebrow">Privacy Policy</div>
+    <h1 class="hero-title">ReelWise</h1>
+    <p class="hero-app">ReelWise: Reels Counter</p>
+    <div class="hero-meta">
+      <span class="badge badge-mint">v1.0.0</span>
+      <span class="badge badge-coral">Effective: September 17, 2026</span>
+      <span class="badge badge-ghost">Accessibility-Based Counting</span>
+      <span class="badge badge-ghost">Firebase</span>
+      <span class="badge badge-ghost">AdMob</span>
+    </div>
+  </header>
+
+  <div class="commitment">
+    <span class="commitment-icon">🛡️</span>
+    <div class="commitment-text">
+      <strong>Our Privacy Commitment</strong>
+      <p>
+        ReelWise is designed to count short-form videos while minimizing the data it handles.
+        Accessibility information is used to recognize reel/short scrolling events on the device.
+        ReelWise does not intentionally collect or upload screenshots, video content, captions,
+        messages, comments, or the text of other apps for counting purposes.
+      </p>
+    </div>
+  </div>
+
+  <nav class="toc-strip" aria-label="Table of contents">
+    <span class="toc-label">Sections</span>
+    <div class="toc-links">
+      <a class="toc-link" href="#s1">1. Scope</a>
+      <a class="toc-link" href="#s2">2. Data We Process</a>
+      <a class="toc-link" href="#s3">3. Accessibility</a>
+      <a class="toc-link" href="#s4">4. Firebase</a>
+      <a class="toc-link" href="#s5">5. Advertising</a>
+      <a class="toc-link" href="#s6">6. Local Data</a>
+      <a class="toc-link" href="#s7">7. Permissions</a>
+      <a class="toc-link" href="#s8">8. Sharing</a>
+      <a class="toc-link" href="#s9">9. Children</a>
+      <a class="toc-link" href="#s10">10. Security</a>
+      <a class="toc-link" href="#s11">11. Retention</a>
+      <a class="toc-link" href="#s12">12. Rights</a>
+      <a class="toc-link" href="#s13">13. Changes</a>
+      <a class="toc-link" href="#s14">14. Contact</a>
+    </div>
+  </nav>
+
+  <main class="body-wrap">
+
+    <h2 class="section-heading fade-in">
+      <span class="section-num">REF</span> Quick Reference Summary
+    </h2>
+
+    <div class="quick-ref fade-in">
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">App</div>
+        <div class="quick-ref-value">ReelWise — ReelWise: Reels Counter</div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Data model</div>
+        <div class="quick-ref-value"><span class="tag-local">Local counting + limited cloud account/statistics data</span></div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Accessibility</div>
+        <div class="quick-ref-value"><span class="tag-yes">Required for automatic reel/short counting</span></div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Advertising</div>
+        <div class="quick-ref-value"><span class="tag-yes">Google Mobile Ads / AdMob banner advertising</span></div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Authentication</div>
+        <div class="quick-ref-value">Firebase Authentication — anonymous, email/password and Google Sign-In where enabled</div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Cloud data</div>
+        <div class="quick-ref-value">Limited account/profile and aggregate reel statistics needed for cloud features</div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Sensitive content</div>
+        <div class="quick-ref-value"><span class="tag-no">No intentional upload of screenshots, video/audio content, captions, messages or comments</span></div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Location</div>
+        <div class="quick-ref-value">ReelWise does not require precise device location for counting. A country/region code may be used for optional aggregate ranking features where enabled.</div>
+      </div>
+      <div class="quick-ref-row">
+        <div class="quick-ref-label">Privacy contact</div>
+        <div class="quick-ref-value">Use the contact information shown in Section 14.</div>
+      </div>
+    </div>
+
+    <!-- 1 -->
+    <h2 class="section-heading fade-in" id="s1">
+      <span class="section-num">01</span> Introduction and Scope
+    </h2>
+    <p class="body-text fade-in">
+      This Privacy Policy ("Policy") explains how <strong>ReelWise</strong> ("ReelWise", "App", "we",
+      "us", or "our") handles information when you install or use the Android application listed
+      on Google Play as <strong>ReelWise: Reels Counter</strong>.
+    </p>
+    <p class="body-text fade-in">
+      ReelWise is a utility that helps users count short-form video scrolling activity on supported
+      platforms, including Instagram Reels, Facebook Reels, and YouTube Shorts. The App may also
+      provide optional account-based synchronization, aggregate statistics/leaderboard features,
+      notifications, and advertising.
+    </p>
+    <p class="body-text fade-in">
+      This Policy is intended to describe the App's actual data practices and to be read together
+      with the disclosures made in Google Play's Data safety section. If our implementation changes,
+      we will update this Policy and the relevant Google Play disclosures.
+    </p>
+
+    <!-- 2 -->
+    <h2 class="section-heading fade-in" id="s2">
+      <span class="section-num">02</span> Information We Process
+    </h2>
+
+    <h3 class="sub-heading fade-in">2.1 Accessibility-service information</h3>
+    <p class="body-text fade-in">
+      To automatically count reels/shorts, ReelWise can use Android's AccessibilityService after you
+      explicitly enable the Accessibility permission in Android Settings. The service observes
+      accessibility events generated by supported apps and uses relevant event/package/view
+      information to determine when the user has moved through a short-form video feed.
+    </p>
+    <p class="body-text fade-in">
+      ReelWise is designed to process this information for counting and related on-device
+      functionality. We do not intentionally collect or upload the underlying content of the
+      third-party apps you use.
+    </p>
+
+    <div class="callout callout-coral fade-in">
+      <span class="callout-emoji">👁️</span>
+      <div class="callout-content">
+        <strong>Important accessibility disclosure</strong>
+        <p>
+          Android AccessibilityService can technically expose information displayed by another app.
+          ReelWise requests this capability only so it can recognize supported reel/short scrolling
+          events. ReelWise does not intentionally record screenshots, screen video, audio,
+          passwords, private messages, comments, captions, or the content of videos for its counting
+          feature. Do not enable Accessibility access if you do not want ReelWise to have this
+          system-level capability.
+        </p>
+      </div>
+    </div>
+
+    <h3 class="sub-heading fade-in">2.2 Account and authentication information</h3>
+    <p class="body-text fade-in">
+      If account features are enabled, ReelWise may use Firebase Authentication. Depending on the
+      sign-in option you choose, Firebase may process:
+    </p>
+    <ul class="check-list fade-in">
+      <li>An anonymous Firebase user identifier for anonymous accounts</li>
+      <li>Email address and authentication credentials for email/password accounts</li>
+      <li>Information provided by Google when you choose Google Sign-In, subject to Google's own policies</li>
+      <li>Account identifiers used to securely associate your ReelWise data with your account</li>
+    </ul>
+
+    <h3 class="sub-heading fade-in">2.3 Reel-count and statistics data</h3>
+    <p class="body-text fade-in">
+      ReelWise stores information needed to provide counting, history, limits, progress and
+      optional synchronization features. This can include:
+    </p>
+    <table class="data-table fade-in">
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>Purpose</th>
+          <th>Typical storage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Daily reel/short count</td>
+          <td>Counting, limits, history and statistics</td>
+          <td>Device; aggregate cloud sync where enabled</td>
+        </tr>
+        <tr>
+          <td>Platform identifier</td>
+          <td>Separate Instagram/Facebook/YouTube statistics</td>
+          <td>Device; aggregate cloud sync where enabled</td>
+        </tr>
+        <tr>
+          <td>Date/time period</td>
+          <td>Daily statistics and history</td>
+          <td>Device; aggregate cloud sync where enabled</td>
+        </tr>
+        <tr>
+          <td>Country/region code</td>
+          <td>Optional aggregate leaderboard/ranking features</td>
+          <td>Cloud only when that feature is enabled</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="body-text fade-in">
+      ReelWise is designed so that cloud statistics contain aggregate usage information rather than
+      the content of the videos you view. The App does not intentionally upload screenshots,
+      captions, comments, direct messages, audio, or video files as part of reel counting.
+    </p>
+
+    <h3 class="sub-heading fade-in">2.4 Device and advertising information</h3>
+    <p class="body-text fade-in">
+      When Google Mobile Ads (AdMob) is present, Google and its advertising partners may process
+      device, advertising, diagnostic and interaction information as described in Google's
+      applicable policies and the configuration of the AdMob SDK. This may include identifiers
+      such as the advertising ID, IP address, approximate location inferred from network information,
+      app/device information, ad interaction information and other signals used for ad delivery,
+      measurement, fraud prevention or personalization where permitted.
+    </p>
+
+    <!-- 3 -->
+    <h2 class="section-heading fade-in" id="s3">
+      <span class="section-num">03</span> Accessibility Service and Supported Platforms
+    </h2>
+    <p class="body-text fade-in">
+      The AccessibilityService is an optional Android system capability that you enable yourself.
+      It is required only for the automatic counting feature. Without it, ReelWise may not be able
+      to detect scrolling events in supported third-party apps.
+    </p>
+    <p class="body-text fade-in">
+      ReelWise is not affiliated with, sponsored by, endorsed by, or officially connected to
+      Instagram, Facebook, YouTube, Google, Meta, or any other third-party platform whose content
+      may be counted by the App. Their names and marks belong to their respective owners.
+    </p>
+    <ul class="bullet-list fade-in">
+      <li>ReelWise does not need your social-media passwords to count reels/shorts.</li>
+      <li>ReelWise does not log in to Instagram, Facebook, or YouTube on your behalf.</li>
+      <li>ReelWise does not intentionally copy or upload the media content you watch.</li>
+      <li>You can disable the AccessibilityService at any time from Android Settings.</li>
+    </ul>
+
+    <!-- 4 -->
+    <h2 class="section-heading fade-in" id="s4">
+      <span class="section-num">04</span> Firebase Services
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise may use Google Firebase services to support authentication and optional cloud
+      synchronization/leaderboard features. The specific Firebase services used by the released
+      version should match the declarations made in Google Play Console and this Policy.
+    </p>
+
+    <h3 class="sub-heading fade-in">4.1 Firebase Authentication</h3>
+    <p class="body-text fade-in">
+      Firebase Authentication is used to create and secure ReelWise accounts when you use
+      anonymous authentication, email/password authentication, or Google Sign-In. Firebase
+      processes the identifiers required to authenticate the account. We do not receive or store
+      your Google account password.
+    </p>
+
+    <h3 class="sub-heading fade-in">4.2 Cloud statistics / leaderboard</h3>
+    <p class="body-text fade-in">
+      If cloud synchronization or leaderboard functionality is enabled, ReelWise may send limited
+      aggregate statistics associated with your account, such as date, platform and reel count.
+      A country/region code may also be used for country-level ranking where that feature is enabled.
+    </p>
+
+    <div class="callout callout-blue fade-in">
+      <span class="callout-emoji">☁️</span>
+      <div class="callout-content">
+        <strong>Data minimization</strong>
+        <p>
+          ReelWise is designed to keep the cloud dataset limited to what is necessary for account
+          functionality and aggregate statistics. The counting system is not intended to upload
+          screenshots, video files, captions, comments, private messages, or the text content of
+          third-party social-media apps.
+        </p>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <h2 class="section-heading fade-in" id="s5">
+      <span class="section-num">05</span> Advertising — Google AdMob
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise may display banner advertisements using the Google Mobile Ads SDK (AdMob). When
+      advertising is enabled, Google may collect and process information necessary to provide,
+      measure, secure and improve advertising services. Depending on the user's region, consent,
+      device settings and Google's advertising configuration, this can include advertising
+      identifiers, IP address, approximate location, device/app information, ad interaction data,
+      diagnostics and fraud-prevention signals.
+    </p>
+    <p class="body-text fade-in">
+      AdMob is operated by Google. Google's processing is governed by Google's applicable terms and
+      privacy documentation. You can review Google's privacy information at
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy &amp; Terms</a>.
+    </p>
+
+    <h3 class="sub-heading fade-in">5.1 Consent and personalized advertising</h3>
+    <p class="body-text fade-in">
+      Where required by applicable law and Google's consent requirements, ReelWise may use Google's
+      consent mechanisms to obtain and record your choices regarding advertising and related data
+      processing. Depending on your region and choices, ads may be personalized or non-personalized.
+    </p>
+    <p class="body-text fade-in">
+      We do not sell your personal information ourselves. However, third-party advertising services
+      may process data under their own policies when ads are served.
+    </p>
+
+    <div class="callout callout-green fade-in">
+      <span class="callout-emoji">📢</span>
+      <div class="callout-content">
+        <strong>Google Play disclosure</strong>
+        <p>
+          If the released build contains AdMob or any other advertising SDK, the Google Play
+          Console "Contains ads" declaration and Data safety answers must accurately reflect that
+          advertising SDK's data practices.
+        </p>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <h2 class="section-heading fade-in" id="s6">
+      <span class="section-num">06</span> Local Storage and On-Device Data
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise stores app settings and counting information locally on your Android device so that
+      the app can work efficiently and preserve your progress. Depending on the released version,
+      this may include daily limits, counting history, platform-specific counts, preferences,
+      notification settings and synchronization state.
+    </p>
+
+    <h3 class="sub-heading fade-in">6.1 Local database and preferences</h3>
+    <ul class="bullet-list fade-in">
+      <li>Local counting/history data remains on your device unless a cloud feature explicitly synchronizes an aggregate dataset.</li>
+      <li>App preferences and settings may be stored locally.</li>
+      <li>Local data can normally be removed by clearing the App's storage or uninstalling ReelWise.</li>
+      <li>Data that has already been synchronized to your account is governed by the cloud retention/deletion rules in this Policy.</li>
+    </ul>
+
+    <h3 class="sub-heading fade-in">6.2 Background work</h3>
+    <p class="body-text fade-in">
+      ReelWise may use Android background scheduling mechanisms such as WorkManager to perform
+      permitted synchronization or maintenance work. Background execution does not by itself mean
+      that ReelWise continuously uploads accessibility content.
+    </p>
+
+    <!-- 7 -->
+    <h2 class="section-heading fade-in" id="s7">
+      <span class="section-num">07</span> Permissions
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise requests only permissions/capabilities needed by the features enabled in the released
+      build. The following describes the principal capabilities relevant to the App:
+    </p>
+
+    <table class="perm-table fade-in">
+      <thead>
+        <tr>
+          <th>Capability / permission</th>
+          <th>Status</th>
+          <th>Purpose</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="perm-name">AccessibilityService</td>
+          <td class="perm-required">Optional but required for automatic counting</td>
+          <td>Detect supported reel/short scrolling events in selected third-party apps.</td>
+        </tr>
+        <tr>
+          <td class="perm-name">INTERNET</td>
+          <td class="perm-required">Required when cloud/ads are enabled</td>
+          <td>Firebase authentication/synchronization and Google Mobile Ads.</td>
+        </tr>
+        <tr>
+          <td class="perm-name">POST_NOTIFICATIONS</td>
+          <td class="perm-required">Optional on supported Android versions</td>
+          <td>Show local limit/reminder notifications if notification features are enabled and permission is granted.</td>
+        </tr>
+        <tr>
+          <td class="perm-name">AD_ID / advertising identifier access</td>
+          <td class="perm-required">May be used by AdMob</td>
+          <td>Advertising measurement/personalization subject to Google's SDK and applicable user choices.</td>
+        </tr>
+        <tr>
+          <td class="perm-name">Camera / microphone / contacts / precise location</td>
+          <td class="perm-required">Not required for reel counting</td>
+          <td>ReelWise does not need these capabilities for its core counting function.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="body-text fade-in">
+      The exact permission list in the published Android manifest controls what the released build
+      can request. This Policy will be updated if those permissions materially change.
+    </p>
+
+    <!-- 8 -->
+    <h2 class="section-heading fade-in" id="s8">
+      <span class="section-num">08</span> Sharing and Third Parties
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise does not sell personal information. Information may be processed by service providers
+      only when needed to operate features of the App, comply with law, protect the service, or
+      deliver advertising.
+    </p>
+
+    <table class="data-table fade-in">
+      <thead>
+        <tr>
+          <th>Provider / service</th>
+          <th>Why it is used</th>
+          <th>Examples of information involved</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Google Firebase Authentication</td>
+          <td>Account creation and sign-in</td>
+          <td>Firebase UID; email or identity-provider account information when applicable</td>
+        </tr>
+        <tr>
+          <td>Google Firebase / cloud database</td>
+          <td>Optional aggregate sync and leaderboard features</td>
+          <td>Date, platform, reel count, account association and country/region code where enabled</td>
+        </tr>
+        <tr>
+          <td>Google Mobile Ads (AdMob)</td>
+          <td>Banner advertising, measurement and fraud prevention</td>
+          <td>Advertising/device signals, IP address, approximate location and ad interaction signals as applicable</td>
+        </tr>
+        <tr>
+          <td>Google Play</td>
+          <td>App distribution and platform services</td>
+          <td>Information processed under Google's own policies</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p class="body-text fade-in">
+      We may disclose information if required by applicable law, legal process, governmental request,
+      or where reasonably necessary to protect users, the App, our rights, or the security of the
+      service.
+    </p>
+
+    <!-- 9 -->
+    <h2 class="section-heading fade-in" id="s9">
+      <span class="section-num">09</span> Children's Privacy
+    </h2>
+    <p class="body-text fade-in">
+      ReelWise is not specifically designed as a child-directed app. Its core purpose is to help
+      users monitor their short-form video scrolling activity. We do not knowingly request or
+      intentionally collect personal information from children for purposes unrelated to providing
+      the App.
+    </p>
+    <p class="body-text fade-in">
+      Because ReelWise may use AccessibilityService, Firebase authentication and advertising,
+      parents/guardians should consider whether the App is appropriate for their child. If the
+      target audience selected in Google Play includes children, the released implementation must
+      also satisfy Google's Families Policy, including its requirements for SDKs, advertising,
+      identifiers and child data.
+    </p>
+    <p class="body-text fade-in">
+      If you believe a child has provided personal information to us in a way that violates this
+      Policy, please contact us using the information in Section 14 so that we can review the matter.
+    </p>
+
+    <!-- 10 -->
+    <h2 class="section-heading fade-in" id="s10">
+      <span class="section-num">10</span> Security
+    </h2>
+    <p class="body-text fade-in">
+      We use reasonable technical and organizational measures appropriate to the nature of the
+      information handled by ReelWise. These measures may include Android application sandboxing,
+      authenticated Firebase access, database security rules, encrypted network transport such as
+      HTTPS/TLS, restricted service access, and secure release-build practices.
+    </p>
+    <p class="body-text fade-in">
+      No method of storage or transmission is completely secure. We cannot guarantee absolute
+      security, but we work to reduce the amount of data handled and protect information against
+      unauthorized access, alteration, disclosure or destruction.
+    </p>
+
+    <div class="callout callout-blue fade-in">
+      <span class="callout-emoji">🔐</span>
+      <div class="callout-content">
+        <strong>What ReelWise does not intentionally upload for counting</strong>
+        <p>
+          Screenshots, screen recordings, video files, audio, captions, comments, direct messages,
+          passwords and the general textual content of third-party social-media apps are not
+          intended to be uploaded to ReelWise's servers as part of the counting feature.
+        </p>
+      </div>
+    </div>
+
+    <!-- 11 -->
+    <h2 class="section-heading fade-in" id="s11">
+      <span class="section-num">11</span> Data Retention and Deletion
+    </h2>
+
+    <h3 class="sub-heading fade-in">11.1 Local data</h3>
+    <p class="body-text fade-in">
+      Local counting history and preferences are retained on your device until you delete them,
+      clear the App's storage, or uninstall ReelWise, subject to Android's own backup/device
+      behavior.
+    </p>
+
+    <h3 class="sub-heading fade-in">11.2 Account and cloud data</h3>
+    <p class="body-text fade-in">
+      If you create or link an account, account information and synchronized aggregate statistics
+      may be retained for as long as necessary to provide the service, maintain security, comply
+      with legal obligations, resolve disputes, or enforce agreements. When you request account
+      deletion, we will delete or de-identify associated data that we are required and able to
+      delete, subject to lawful retention requirements and reasonable technical deletion periods.
+    </p>
+
+    <h3 class="sub-heading fade-in">11.3 Advertising data</h3>
+    <p class="body-text fade-in">
+      Data processed by Google Mobile Ads is retained and handled according to Google's applicable
+      policies and retention practices rather than being controlled entirely by ReelWise.
+    </p>
+
+    <!-- 12 -->
+    <h2 class="section-heading fade-in" id="s12">
+      <span class="section-num">12</span> Your Rights and Choices
+    </h2>
+
+    <h3 class="sub-heading fade-in">12.1 Accessibility control</h3>
+    <p class="body-text fade-in">
+      You can turn ReelWise's AccessibilityService access on or off from Android Settings at any
+      time. Turning it off prevents automatic accessibility-based counting.
+    </p>
+
+    <h3 class="sub-heading fade-in">12.2 Account deletion</h3>
+    <p class="body-text fade-in">
+      If account functionality is available in your version of ReelWise, you may use the App's
+      account deletion feature where provided. You may also contact the privacy address in Section
+      14 to request deletion of your account and associated personal data.
+    </p>
+
+    <h3 class="sub-heading fade-in">12.3 Local data deletion</h3>
+    <ul class="bullet-list fade-in">
+      <li>Use ReelWise's available history/settings deletion controls.</li>
+      <li>Use Android Settings → Apps → ReelWise → Storage → Clear data, where supported.</li>
+      <li>Uninstall ReelWise to remove its local application data from the device, subject to Android's system behavior.</li>
+    </ul>
+
+    <h3 class="sub-heading fade-in">12.4 Advertising choices</h3>
+    <p class="body-text fade-in">
+      Advertising choices may depend on your region, consent status, Android settings and Google's
+      available controls. Where applicable, ReelWise may present a consent message allowing you
+      to make choices about personalized advertising and related data processing.
+    </p>
+
+    <h3 class="sub-heading fade-in">12.5 Privacy-law rights</h3>
+    <p class="body-text fade-in">
+      Depending on where you live, you may have rights such as access, correction, deletion,
+      restriction, objection, portability, or withdrawal of consent. To exercise a right, contact
+      us using the privacy contact information in Section 14. We may need to verify your request
+      before completing it.
+    </p>
+
+    <!-- 13 -->
+    <h2 class="section-heading fade-in" id="s13">
+      <span class="section-num">13</span> Changes to This Privacy Policy
+    </h2>
+    <p class="body-text fade-in">
+      We may update this Policy when the App's functionality, data practices, third-party services,
+      advertising configuration, legal requirements, or security practices change.
+    </p>
+    <ul class="bullet-list fade-in">
+      <li>The "Effective Date" will be updated when a material revision is published.</li>
+      <li>The current version will be made available at the public Privacy Policy URL linked from Google Play.</li>
+      <li>Where required, material changes will be communicated through the App or another appropriate notice.</li>
+    </ul>
+    <p class="body-text fade-in">
+      You should review this Policy periodically. Continued use of the App after an updated Policy
+      becomes effective means that you have had an opportunity to review the revised Policy.
+    </p>
+
+    <!-- 14 -->
+    <h2 class="section-heading fade-in" id="s14">
+      <span class="section-num">14</span> Contact Information
+    </h2>
+    <p class="body-text fade-in">
+      For privacy questions, data-access requests, account-deletion requests, security concerns, or
+      other questions about ReelWise's privacy practices, contact:
+    </p>
+
+    <div class="contact-box fade-in">
+      <h4>ReelWise — Privacy Contact</h4>
+      <div class="contact-row">
+        <span class="contact-icon">📧</span>
+        <span class="contact-label">Email</span>
+        <span class="contact-val"><a id="email-link" href="#">REPLACE-WITH-YOUR-PRIVACY-EMAIL</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-icon">🌐</span>
+        <span class="contact-label">Policy URL</span>
+        <span class="contact-val"><a id="website-link" href="#">REPLACE-WITH-YOUR-PUBLIC-PRIVACY-POLICY-URL</a></span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-icon">📱</span>
+        <span class="contact-label">App</span>
+        <span class="contact-val">ReelWise: Reels Counter</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-icon">⏰</span>
+        <span class="contact-label">Response time</span>
+        <span class="contact-val">Within 30 days, where reasonably practicable</span>
+      </div>
+    </div>
+
+
+    <h2 class="section-heading fade-in">
+      <span class="section-num">LINKS</span> Relevant Third-Party Privacy Information
+    </h2>
+    <ul class="bullet-list fade-in">
+      <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Firebase Privacy Information</a></li>
+      <li><a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener noreferrer">Google AdMob / Mobile Ads Privacy Information</a></li>
+      <li><a href="https://support.google.com/googleplay/android-developer/answer/10144311" target="_blank" rel="noopener noreferrer">Google Play User Data Policy</a></li>
+    </ul>
+
+  </main>
+
+  <footer class="footer">
+    <span class="footer-copy">© 2026 ReelWise. All rights reserved.</span>
+    <div class="footer-tags">
+      <span class="footer-tag">ACCESSIBILITY</span>
+      <span class="footer-tag">FIREBASE</span>
+      <span class="footer-tag">ADMOB</span>
+      <span class="footer-tag">DATA MINIMIZATION</span>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const email = APP.email;
+  const website = APP.website;
+
+  const emailLink = document.getElementById('email-link');
+  const websiteLink = document.getElementById('website-link');
+
+  emailLink.textContent = email;
+  if (!email.startsWith('REPLACE-')) {
+    emailLink.href = `mailto:${email}`;
+  }
+
+  websiteLink.textContent = website;
+  if (!website.startsWith('REPLACE-')) {
+    websiteLink.href = website;
+    websiteLink.target = '_blank';
+    websiteLink.rel = 'noopener noreferrer';
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+});
+</script>
+</body>
+</html>
